@@ -39,58 +39,60 @@ const siteContent = {
 
 // navigation
 
-const navIetms = document.querySelectorAll('header nav a');
-navItems 
+// const navIetms = document.querySelectorAll('header nav a');
+// navItems 
 
 const navLogo = document.querySelector('#logo-img');
 navLogo.src = 'img/logo.png';
-/////a links///////////////
-const Links = document.querySelectorAll('a');
+// /////a links///////////////
+const links = document.querySelectorAll('a');
+  for(let i = 0; i < links.length; i++) {
+    links[i] = ['nav'][`nav-item-];
+   
+  }
+});
 
-Array.from(Links).forEach(link => {
-  link.textContent= "Links"
-
-////////header///////////////
+// ////////header///////////////
 const hdrText = document.querySelector('.cta-text h1');
 hdrText.textContent = siteContent.cta['h1'];
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = 'img/header-img.png';
 const theBtn = document.querySelector('buttton');
-theBtn.textContent = 'Get Started';
+theBtn.textContent = cta.button['Get Started'];
 
 
 
 
 
 
-/////////////main /////////////
-const h4 = document.querySelectorAll('.main-content h4');
+// /////////////main /////////////
+// const h4 = document.querySelectorAll('.main-content h4');
 
 
-const paragraphs = document.querySelectorAll('main-content p');
+// const paragraphs = document.querySelectorAll('main-content p');
 
-///////////mid pic//////////////////////////////
+// ///////////mid pic//////////////////////////////
 const middleImage = document.querySelector('#middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
 
-////////////////////////////////
-const topContent = document.querySelector(".top-content");
-topContent.style.display = "flex";
-/////////////////////////////////////////
-const bottomContent = document.querySelector(".bottom-content");
-bottomContent.style.display = "flex";
-/////////contact/////////////////
-const contactSection = document.querySelectorAll(".contact");
-const contactHeader = document.querySelector(".contact h4");
-contactHeader.textContent = siteContent[`contact`]["contact-h4"];
+// ////////////////////////////////
+// const topContent = document.querySelector(".top-content");
+// topContent.style.display = "flex";
+// /////////////////////////////////////////
+// const bottomContent = document.querySelector(".bottom-content");
+// bottomContent.style.display = "flex";
+// /////////contact/////////////////
+// const contactSection = document.querySelectorAll(".contact");
+// const contactHeader = document.querySelector(".contact h4");
+// contactHeader.textContent = siteContent[`contact`]["contact-h4"];
 
-const contactPs = document.querySelectorAll(".contact p");
-contactPs[0].textContent = siteContent[`contact`]["address"];
-contactPs[1].textContent = siteContent[`contact`]["phone"];
-contactPs[2].textContent = siteContent[`contact`]["email"];
+// const contactPs = document.querySelectorAll(".contact p");
+// contactPs[0].textContent = siteContent[`contact`]["address"];
+// contactPs[1].textContent = siteContent[`contact`]["phone"];
+// contactPs[2].textContent = siteContent[`contact`]["email"];
 
-/////////Footer//////////////////////
-const footer = document.querySelector("footer p");
-footer.textContent = siteContent[`footer`]["copyright"];
+// /////////Footer//////////////////////
+// const footer = document.querySelector("footer p");
+// footer.textContent = siteContent[`footer`]["copyright"];
 
 
