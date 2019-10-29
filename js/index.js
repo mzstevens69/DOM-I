@@ -113,7 +113,7 @@ contP[1].textContent = siteContent['contact']['phone'];
 contP[2].textContent = siteContent['contact']['email'];
 
 /////////Footer//////////////////////
-const footer = document.querySelector("footer p");
-footer.textContent = siteContent[`footer`]["copyright"];
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['opyright'];
 
 
